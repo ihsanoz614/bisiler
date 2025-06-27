@@ -1,5 +1,3 @@
-# Kullanıcının onayıyla dosya tekrar oluşturuluyor
-
 # index.html
 index_html = """<!DOCTYPE html>
 <html lang="tr">
