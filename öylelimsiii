@@ -206,13 +206,4 @@ for filename in ["melek.jpg", "melek2.jpg", "gul-arkaplan.jpg"]:
 with open(f"{base_path}/muzik/lovesong.mp3", "wb") as f:
     f.write(b"")
 
-# ZIP oluşturma
-zip_path = "/mnt/data/melek-sitesi.zip"
-with ZipFile(zip_path, "w") as zipf:
-    for foldername, subfolders, filenames in os.walk(base_path):
-        for filename in filenames:
-            filepath = os.path.join(foldername, filename)
-            arcname = os.path.relpath(filepath, base_path)
-            zipf.write(filepath, arcname)
 
-zip_path
